@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shafiqul Islam Portfolio</title>
+
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .project-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .skill-tag {
+            background: #333;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: #ff6347;
+            transform: scale(1.1);
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Scroll Animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Dark Mode Styling */
+/*body.dark-mode {
+    background-color: #333;  /* Dark background */
+   /* color: black;  /* Light text */
+}
+
+
+
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://i.imgur.com/wNGCyW1.jpeg" alt="Md Shafiqul Islam" class="profile-img">
+
+            <h1>Md Shafiqul Islam Rifat</h1>
+            <p></p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <li><a href="#Rifat.AI">Rifat.AI</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <p style="max-width: 800px; margin: 0 auto; text-align: center;">Data tells a story, and I translate it into actionable insights that drive business success. With a background in Electrical and Electronic Engineering, I specialize in data analytics, visualization, and predictive modeling using Power BI, SQL, and Python.
+
+My expertise spans market analysis, business intelligence, and automation—helping organizations uncover trends, optimize performance, and solve complex problems through data-driven storytelling. With an engineering mindset, I bring precision and analytical depth to every data-driven decision.
+
+Continuously exploring cutting-edge analytics techniques, I strive to enhance efficiency, refine forecasting, and develop data-driven solutions that make a measurable impact.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-gallery">
+      
+ <!-- Jam Future Park Device -->
+<div class="project-card">
+    <img src="https://i.imgur.com/k48IBJW.png" alt="Industrial Protection System" class="project-img">
+    <h3>Problem Statement of JAM Future Park(Fictional AR,VR Company Pitch Report)</h3>
+    <p>
+        Changing Consumer Behavior, Maximizing Space Utilization, Tech-Savvy Audience, Creating Differentiation:
+    </p>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-1')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-1" style="display:none; margin-top:20px;">
+        <iframe src="https://docs.google.com/presentation/d/1HlEn0Xr5udH0X3ZGg0uHC9MJmhhJAq0H/edit?usp=drive_link&ouid=113852572550677526782&rtpof=true&sd=true" width="100%" height="500px"></iframe>
+    </div>
+</div>
+ <!-- Purpose of Advertising -->
+<div class="project-card">
+    <img src="https://i.imgur.com/oJNtIEV.jpeg" alt="Smart Irrigation System" class="project-img">
+    <h3>Purpose of Advertising</h3>
+    <p>The purpose of advertising is to promote products, services, or brands to the audience through different channels like TV, radio, print, online platforms, social media, and outdoor displays.<p>
+  
+  <div class="more-info" style="display: none;">
+      Its main goal is to raise awareness, create interest, increase sales, and ultimately reach the business goals. Additionally, advertising is a paid marketing used to influence individuals or groups. It is both an art and a science to promote business.</p>
+  
+</div>  <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-2')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-2" style="display:none; margin-top:20px;">
+        <iframe src="https://drive.google.com/file/d/1BcGFtWwmzeN0YnIirvHvEZg09VXS7z-e/view?usp=drive_link" width="100%" height="500px"></iframe>
+    </div>
+</div>
+              
+ <!-- Power BI Dashboard -->
+<div class="project-card">
+    <img src="https://i.imgur.com/X6FKiWU.png" alt="Smart Irrigation System" class="project-img">
+    <h3>Madhav Store Sales Dashboard 📊</h3>
+    <p>
+        🚀 <strong>Project Overview:</strong>  
+        This Power BI dashboard provides an insightful analysis of Madhav Store's sales performance. It visualizes key metrics, including total revenue, profit, and quantity sold, along with breakdowns by city, customer, category, payment mode, and time-based trends.
+    </p>
+   <div class="more-info" style="display: none;"> 
+    <p>📈 <strong>Key Features:</strong></p>
+    <ul>
+        <li>✅ <strong>Sales & Profit Overview:</strong> Total revenue of 438K, profit of 37K, and 5615 units sold.</li>
+        <li>✅ <strong>City-wise Sales:</strong> Highest sales recorded in Indore (64K) and Mumbai (59K).</li>
+        <li>✅ <strong>Category & Subcategory Analysis:</strong> Clothing leads in quantity sold, while printers generate the highest profit (8.6K).</li>
+        <li>✅ <strong>Time-Series Trends:</strong> Monthly profit fluctuations, highlighting peak sales periods and seasonal trends.</li>
+        <li>✅ <strong>Payment Mode Insights:</strong> Majority of transactions made through Cash on Delivery (COD) - 43.74%.</li>
+        <li>✅ <strong>Customer Analysis:</strong> Identifying top buyers driving revenue.</li>
+    </ul>
+
+    <p>🔍 <strong>Tech Stack:</strong></p>
+    <ul>
+        <li>✔ <strong>Power BI</strong> - Data visualization and analysis</li>
+        <li>✔ <strong>DAX & Power Query</strong> - Data modeling and transformation</li>
+        <li>✔ <strong>SQL & Excel</strong> - Data preprocessing</li>
+    </ul>
+
+    <p>💡 <strong>Impact:</strong>  
+        This dashboard helps businesses track sales trends, identify profitable segments, and optimize decision-making with data-driven insights.
+    </p>
+     
+</div>  <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-2')">View Full Report</button>
+    
+    <!-- PDF Report Section -->
+    <div id="pdf-report-2" style="display:none; margin-top:20px;">
+        <iframe src="https://i.imgur.com/lwshjI4.jpeg" width="100%" height="500px"></iframe>
+    </div>
+</div>
+ 
+<!-- Power BI Dashboard -->
+<div class="project-card">
+    <img src="https://i.imgur.com/W6LUmQd.png" alt="Credit Card Transaction Analysis Dashboard" class="project-img">
+    <h3>Credit Card Transaction Analysis Dashboard 📊</h3>
+    <p>
+        🚀 <strong>Project Overview:</strong>  
+        This Power BI dashboard provides a comprehensive analysis of credit card transactions, offering key insights into revenue, transaction volume, and customer spending behavior. It helps financial institutions track performance, identify trends, and make data-driven decisions.
+    </p>
+   <div class="more-info" style="display: none;"> 
+    <p>📈 <strong>Key Features:</strong></p>
+    <ul>
+        <li>✅ <strong>Total Revenue & Transactions Overview:</strong> $55M revenue, 45M transactions, and 656K transaction volume.</li>
+        <li>✅ <strong>Card Category Breakdown:</strong> Blue cards dominate with $46M revenue, followed by Silver, Gold, and Platinum.</li>
+        <li>✅ <strong>Transaction Methods:</strong> Swipe transactions lead with $35M, followed by chip ($17M) and online ($3M).</li>
+        <li>✅ <strong>Quarterly Trends:</strong> Q3 records the highest transaction volume (166.6K) and revenue fluctuations across Q1-Q4.</li>
+        <li>✅ <strong>Spending Behavior Analysis:</strong> Bills generate the highest revenue ($14M), followed by entertainment, fuel, and grocery.</li>
+        <li>✅ <strong>Customer Segmentation:</strong> Graduate customers contribute the most revenue ($22M), with business professionals leading in spending.</li>
+    </ul>
+
+    <p>🔍 <strong>Tech Stack:</strong></p>
+    <ul>
+        <li>✔ <strong>Power BI</strong> - Data visualization & dashboard creation</li>
+        <li>✔ <strong>DAX & Power Query</strong> - Data modeling & transformation</li>
+        <li>✔ <strong>SQL & Excel</strong> - Data preprocessing & analysis</li>
+    </ul>
+
+    <p>💡 <strong>Impact:</strong>  
+        This dashboard enables financial analysts and banks to track transaction trends, optimize credit card offerings, and enhance customer engagement with data-driven insights.
+    </p>
+     
+</div>  
+<!-- View More / View Less Button -->
+<button class="toggle-btn">View More</button>
+<!-- View Full Report Button -->
+<button class="view-report-btn" onclick="toggleReport('pdf-report-credit-card')">View Full Report</button>
+
+<!-- PDF Report Section -->
+<div id="pdf-report-credit-card" style="display:none; margin-top:20px;">
+    <iframe src="your-pdf-url-here" width="100%" height="500px"></iframe>
+</div>
+</div>
+   
+<!-- Credit card Power BI Dashboard Project -->
+ <div class="project-card">
+    <img src="https://i.imgur.com/4L122z2.png" alt="Credit Card Customer Transaction Report" class="project-img">
+    <h3>Credit Card Customer Transaction Analysis 📊</h3>
+    <p>
+        🚀 <strong>Project Overview:</strong>  
+        This Power BI dashboard provides a detailed analysis of credit card transactions, helping financial institutions and businesses gain valuable insights into customer spending behaviors, revenue patterns, and demographic influences.
+    </p>
+   <div class="more-info" style="display: none;"> 
+    <p>📈 <strong>Key Insights:</strong></p>
+    <ul>
+        <li>💰 <strong>Total Revenue:</strong> $55M | <strong>Customer Income:</strong> $576M | <strong>Total Interest Earned:</strong> $8M</li>
+        <li>🎭 <strong>Customer Segmentation:</strong> Analysis by job type, education level, and income groups.</li>
+        <li>📊 <strong>Transaction Trends:</strong> Breakdown by card type (Blue, Gold, Silver, Platinum), quarter-wise trends, and revenue contribution.</li>
+        <li>🎯 <strong>Demographics Analysis:</strong> Revenue distribution based on age, gender, marital status, and location.</li>
+        <li>🚗 <strong>Asset Ownership Insights:</strong> Spending differences between car owners vs. non-owners and homeowners vs. renters.</li>
+    </ul>
+
+    <p>🔍 <strong>Tech Stack:</strong></p>
+    <ul>
+        <li>✔ <strong>Power BI</strong> - Data visualization & dashboard creation</li>
+        <li>✔ <strong>DAX & Power Query</strong> - Data modeling & transformation</li>
+        <li>✔ <strong>SQL & Excel</strong> - Data preprocessing & analysis</li>
+    </ul>
+
+    <p>💡 <strong>Impact:</strong>  
+        This dashboard enables financial analysts, banks, and businesses to:
+        <ul>
+            <li>✅ Identify high-revenue customer segments</li>
+            <li>✅ Optimize credit card product offerings</li>
+            <li>✅ Improve customer targeting strategies</li>
+            <li>✅ Enhance data-driven decision-making</li>
+        </ul>
+    </p>
+</div>  
+
+<!-- View More / View Less Button -->
+<button class="toggle-btn">View More</button>
+<!-- View Full Report Button -->
+<button class="view-report-btn" onclick="toggleReport('pdf-report-3')">View Full Report</button>
+      
+<!-- PDF Report Section -->
+<div id="pdf-report-3" style="display:none; margin-top:20px;">
+    <iframe src="https://i.imgur.com/your-report-link.pdf" width="100%" height="500px"></iframe>
+</div>
+</div>   
+ 
+<!-- Power BI Dashboard US Apparel-->
+<div class="project-card">
+    <img src="https://i.imgur.com/JJUjMe7.png" alt="Smart Irrigation System" class="project-img">
+    <h3>Can Bangladesh Maintain Its Position as the Third-Largest Apparel Exporter to the U.S.? </h3>
+    
+    <p>
+        🚀 <strong>Project Overview:</strong>  
+       This Power BI dashboard provides an in-depth analysis of U.S. apparel imports and Bangladesh’s export performance for 2023-2024.
+    </p>
+
+    <div class="more-info" style="display: none;">
+        <p>The global apparel industry is evolving rapidly, with countries competing for a larger share in the lucrative U.S. market. Bangladesh has firmly established itself as the third-largest apparel exporter to the U.S., following China and Vietnam. However, recent trends suggest that India and Cambodia could pose a significant challenge to Bangladesh’s position.</p>
+    
+   <li><strong>Current Performance of Bangladesh in U.S. Apparel Imports</strong> </li>Based on recent data (2023-2024), Bangladesh's performance in the U.S. market is as follows:</li>
+            <p>✅ <strong>Export Value Growth:</strong>+0.73% (from $7,289.76M to $7,342.85M).<p>
+            <p>✅ <strong>Export Volume Growth:</strong>+4.86% (from 2,259.84M SME to 2,369.60M SME).<p>
+            <p>❌ <strong>Unit Price Decline:</strong>  -3.94% (from $3.23/SME to $3.10/SME).<p>
+            <p>While Bangladesh has managed to increase export volume, the declining unit price is a concern. This indicates that while Bangladesh is exporting more garments, it is earning less per unit, which may affect long-term profitability and competitiveness.
+            <p> <strong>Who is Leading the U.S. Apparel Market?</strong> China remains the dominant player in the U.S. apparel import market, accounting for 28.05% of total imports in 2024, followed by Vietnam at 25.46%. Despite facing increasing labor costs and trade tensions, China maintains its leadership due to its well-established supply chain and technological advancements.
+
+Vietnam has seen a steady rise in exports, with a 5.67% growth in export value and an impressive 9.47% growth in export volume. This suggests that Vietnam is expanding its market share while maintaining competitive pricing..</l>
+        
+
+        <p>🔍 <strong>Can Bangladesh Maintain Its Position?</strong></p><p>Several factors will determine whether Bangladesh can hold its third-place ranking in the U.S. apparel market:<p>
+        <ul>
+            <p><strong>1. Competition from India and Cambodia</strong><P> <li>India: India’s export value grew by 4.95%, and its volume surged by 13.09%. This rapid increase indicates that India is aggressively expanding its market presence.<p><li><p>Cambodia: With a 14.48% increase in export value and an 18.45% rise in export volume, Cambodia is a strong contender. Its lower production costs and duty-free access under the Generalized System of Preferences (GSP) give it a competitive edge.<p><p>If these countries continue on their growth trajectories, Bangladesh could face the risk of being overtaken in the next few years.<p>
+            <p><strong>2. Declining Unit Price and Profitability</strong> - Bangladesh’s unit price fell by -3.94%, indicating a possible reliance on lower-margin products. To sustain long-term growth, the industry must:<p>
+            <li>Focus on value-added products rather than just volume.
+<li>Invest in automation and sustainable manufacturing to improve efficiency.<li>
+
+Strengthen branding and marketing to command higher prices in global markets.</li>
+          
+          <p><strong>3. Infrastructure and Policy Support</strong> - Government policies and infrastructure improvements will be crucial. Some key areas to focus on:<p>
+            <li>Skilled workforce development for advanced manufacturing techniques.
+<li>Improved logistics and ports to reduce shipment delays.<li>
+
+Diversifying export markets beyond the U.S. to reduce dependency.</li>
+        </ul>
+
+        <p>💡 <strong>What’s Next for Bangladesh?</strong>  
+            To maintain its third-largest apparel exporter status, Bangladesh must focus on both quantity and quality. Competing countries like India and Cambodia are growing rapidly, and Bangladesh must adapt by enhancing productivity, innovation, and sustainability.
+
+Bangladesh’s future in the U.S. apparel market is promising but not guaranteed. With strategic investments in technology, policy reforms, and high-value products, Bangladesh can strengthen its position and continue to be a dominant force in global apparel exports
+        </p>
+          
+    </div>
+  
+ 
+    <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+
+    <!-- View Full Report Button -->
+    <button class="view-report-btn">View Full Report</button>
+</div>
+
+ 
+ <!-- Blog Post Is AaaS the New SaaS?-->
+<div class="project-card">
+    <img src="https://i.imgur.com/uiNxNQ5.jpeg" alt="Smart Irrigation System" class="project-img">
+    <h3>Is AaaS the New SaaS? Understanding Satya Nadella’s Explosive Prediction on the Future of Business Applications</h3>
+    
+    <p>
+        
+       In a recent BG Squared podcast, Microsoft’s CEO Satya Nadella made a bold statement that has turned heads in the tech world: “SaaS is dead. 
+    </p>
+
+    <div class="more-info" style="display: none;">
+      <p>Business apps are going to be replaced by AI agents.” While it may sound like a drastic shift, his prediction offers a fascinating glimpse into the future of technology and how business applications will evolve in the age of artificial intelligence (AI). But what exactly does this mean? And is AaaS the new SaaS? Let's break it down.
+        <p><strong>The Current Landscape: What is SaaS?</strong>
+          <p>To understand Nadella’s prediction, we first need to revisit what SaaS (Software as a Service) is. SaaS is a cloud-based software delivery model where applications are hosted by a provider and made available to customers over the internet. Businesses typically use SaaS solutions for a wide variety of purposes, including:</p>
+    
+   <li>Customer Relationship Management (CRM), like Salesforce
+ </li>
+      <li>Accounting and Financial Management, like QuickBooks</li>
+      <li>Project Management, like Asana or Trello</li>
+      <li>Communication and Collaboration, like Microsoft Office 365 and Slack</li>
+      <p>SaaS solutions are incredibly popular because they eliminate the need for businesses to maintain on-premise infrastructure, provide flexibility, and allow for easier updates and scaling. However, there are limitations. Traditional business apps built on SaaS rely on CRUD (Create, Read, Update, Delete) operations and business logic — essentially, they are complex databases with workflows.<p>
+      
+            <p><strong>Satya Nadella’s Prediction: A Shift to AI Agents</strong><p>In the podcast, Satya Nadella proposed that business logic — the core of traditional business applications — is moving toward AI agents. These agents are intelligent systems that can automate decision-making, adapt to different business scenarios, and perform tasks with minimal human intervention.<P>
+            <p> <strong>What Are AI Agents?</strong><p>AI agents are autonomous systems powered by artificial intelligence that can act on behalf of humans to accomplish tasks. These tasks could range from data processing, decision-making, communication, or even more complex activities, such as predicting market trends or generating reports.
+
+Imagine a business app that traditionally required you to manually input data, set parameters, and wait for outputs. Now, with AI agents, these systems can proactively analyze data, offer suggestions, predict outcomes, and even make decisions on your behalf. In essence, AI agents will take over the business logic that previously relied on simple rules and patterns.<p><p>For example:<p>
+      <li>In a CRM system like Salesforce, rather than manually setting up alerts for follow-ups, an AI agent could monitor customer interactions and automatically suggest the best course of action, even scheduling meetings and sending personalized emails.<li>
+      In project management apps, AI could not only track tasks and deadlines but also assess team performance, recommend resources, and optimize workflows based on real-time data.
+            <p><strong>How Will AI Agents Replace Traditional Apps?</strong>  <p>Nadella argues that once AI agents take over the business logic, traditional applications — which are essentially built on CRUD operations — will no longer be needed. Here's why:<p>
+            <li>AI’s Ability to Learn and Adapt: While traditional apps require updates and manual input, AI systems learn over time. They can automate more complex business logic and adjust their behavior based on patterns, data trends, and past decisions. This reduces the need for human intervention and streamlines workflows.<li>Dynamic Decision-Making: AI agents are capable of analyzing vast amounts of data in real time and making informed decisions instantly. Instead of relying on pre-set rules or logic, these systems can process new data on the fly and provide smarter insights. This adaptability is a game-changer for businesses that rely on up-to-date information to stay competitive.<li>Automating Repetitive Tasks: Many of the tasks performed by business apps today are repetitive and follow standard rules. AI agents can take over these tasks, freeing up human employees to focus on more creative and strategic work.
+            <p> <strong>Enter AaaS: The New Frontier of AI Solutions:</strong> As we move from SaaS to AI agents, there’s a natural question that arises: Is AaaS (AI-as-a-Service) the next big thing?</li>
+        
+
+        <p> <strong>Can Bangladesh Maintain Its Position?</strong></p><p>Several factors will determine whether Bangladesh can hold its third-place ranking in the U.S. apparel market:<p>
+        
+            <p><strong>What is AaaS?</strong><P>AaaS refers to the delivery of AI-powered services through the cloud. Just like SaaS allows businesses to access software over the internet, AaaS allows businesses to leverage AI capabilities without having to build or maintain the infrastructure themselves. AaaS can include a wide range of AI services, such as: <li>Natural Language Processing (NLP): Text and speech recognition systems that can automate customer service or content analysis.
+      <li>Machine Learning Models: Predictive analytics or recommendation engines that can optimize business strategies.
+      <li>Robotic Process Automation (RPA): Automating mundane tasks, such as invoice processing or data entry.<p>Examples of AaaS platforms include:<p>
+        <li>IBM Watson: Provides AI services such as language understanding, machine learning, and data analysis.
+<li>Google AI: Offers cloud-based AI solutions for everything from image recognition to predictive modeling.
+<li>Microsoft Azure AI: A suite of AI tools for businesses to integrate AI into their processes.<p>With AaaS, businesses can integrate powerful AI capabilities into their operations without needing in-house expertise in AI development. This lowers the barrier to entry and allows smaller companies to harness the power of AI.
+            <p><strong>How AaaS Fits into the Future of Business Applications</strong> - As AI agents become more capable, businesses will increasingly turn to AaaS to integrate these intelligent systems into their operations. Instead of purchasing a static software application like a CRM or project management tool, companies may choose to integrate AI-powered solutions that can adapt and grow with their needs.
+
+For example:<p>
+            <li>A marketing team could use an AaaS platform to automatically segment their audience, create personalized content, and adjust campaigns in real time based on AI-driven insights.
+
+<li>A financial analyst might rely on an AI agent to generate reports, track trends, and offer investment advice without having to manually input data into spreadsheets.<p>This shift from traditional software applications to AI-driven systems opens up a world of possibilities for businesses looking to become more agile, efficient, and data-driven.
+
+          
+          <p><strong>The Future: A World of AI-Powered Business Applications</strong>-Satya Nadella’s prediction may seem far-fetched to some, but it’s grounded in the rapid development of AI technologies and their growing impact on business. As AI agents replace traditional business apps, we could see a dramatic shift in how organizations approach everything from decision-making to customer interaction.
+
+Will AaaS replace SaaS? It’s likely that both will coexist for a time, but AaaS has the potential to redefine how businesses operate and evolve. For those in industries like data science, business development, or software engineering, understanding this shift is essential.<p>
+            
+        </u>
+
+        <p>💡 <strong>Embrace the Future of AI Agents</strong>  
+            Satya Nadella’s vision of AI agents taking over the business logic traditionally handled by SaaS is an exciting glimpse into the future of business applications. As AI continues to advance, we will likely see a move toward more dynamic, intelligent solutions that not only automate tasks but also adapt to the ever-changing needs of businesses. AaaS is a natural extension of this trend, offering businesses the opportunity to tap into the power of AI without building complex infrastructure themselves.
+
+For businesses, the key takeaway is this: to stay competitive, embracing AI technologies, whether through AaaS or other platforms, will be crucial in the coming years. The era of static software apps is fading, and the age of intelligent, autonomous AI agents is just beginning.
+        </p>
+          
+    </div>
+  
+ 
+    <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+
+    <!-- View Full Report Button -->
+    <button class="view-report-btn">View Full Report</button>
+</div>
+
+<!-- DESIGN A PATCH ANTENNA -->
+<div class="project-card">
+    <img src="https://i.imgur.com/TXVb8oZ.png" alt="Smart Irrigation System" class="project-img">
+    <h3>DESIGN A PATCH ANTENNA AND STUDY ITS 
+PERFORMANCE AT 2.45 GHZ</h3>
+    <p>A simple microstrip patch antenna consists of a metal patch, grounded between a dielectric medium 
+called a substrate.<p>
+       
+<div class="more-info" style="display: none;">
+Microstrip patch antennas are used specifically for communication purposes in 
+military and civilian applications. The growing demand for low-cost, lightweight, reliable antennas for 
+wireless devices, and thin antennas raises new challenges in building antennas for wireless 
+communications. In this document, a simple microstrip patch antenna with a resonant frequency of 
+2.45 GHz is built into the CST microwave studio.</p>
+
+</div>  <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-2')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-2" style="display:none; margin-top:20px;">
+        <iframe src="https://i.imgur.com/lwshjI4.jpeg" width="100%" height="500px"></iframe>
+    </div>
+</div>
+              
+<!-- 10 GHz and 60 GHz Antenna -->
+<div class="project-card">
+    <!-- First Image -->
+    <img src="https://i.imgur.com/ARooS35.png" alt="First Image - Smart Irrigation System" class="project-img">
+    
+    <!-- Second Image -->
+    <img src="https://i.imgur.com/ffcb5w7.png" alt="Second Image - Smart Irrigation System" class="project-img">
+    <h3>Two antenna configurations for 10GHz and 60GHz </h3>
+    <p>The antenna designs can potentially be used in the medical field to detect cancer. <p>
+      
+ <div class="more-info" style="display: none;">According to the outcomes of our simulation of MPAs, a glass substrate with a thickness of 0.35 mm for 60 GHz and 1.57 mm for 10 GHz is employed to achieve transparency.  The substrate has a relative permittivity of 2.2. With an impedance bandwidth of 4.667 GHz for 60 GHz and 466 MHz for 10 GHz, the antenna obtained a resonance frequency of 58.565 GHz for 60 GHz and 10.628 GHz in free space.
+ </p>
+</div>  <!-- View More / View Less Button -->
+    <button class="toggle-btn">View More</button>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-2')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-2" style="display:none; margin-top:20px;">
+        <iframe src="https://i.imgur.com/lwshjI4.jpeg" width="100%" height="500px"></iframe>
+    </div>
+</div>
+              
+
+              
+ <!-- Mendarline Patch Antenna -->
+<div class="project-card">
+    <img src="https://i.imgur.com/lwshjI4.jpeg/400x200" alt="Smart Irrigation System" class="project-img">
+    <h3>Mendarline Patch antenna Design</h3>
+    <p>For 5g Communications </p>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-2')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-2" style="display:none; margin-top:20px;">
+        <iframe src="https://i.imgur.com/lwshjI4.jpeg" width="100%" height="500px"></iframe>
+    </div>
+</div>
+              
+<!-- Multiband Microstrip Patch Antenna -->
+<div class="project-card">
+    <img src="https://i.imgur.com/BdsNsQf.png" alt="Antenna Design" class="project-img">
+    <h3>Multiband Microstrip Patch Antenna for 5G</h3>
+    <ul>
+        <li>Designed & simulated slot-based multiband antenna for 5G</li>
+        <li>Operates in multiple high-frequency bands (24-85GHz)</li>
+        <li>Achieved 87.5%–98% efficiency using CST Microwave Studio</li>
+    </ul>
+    <!-- View Full Report Button -->
+    <button class="view-report-btn" onclick="toggleReport('pdf-report-3')">View Full Report</button>
+    <!-- PDF Report Section -->
+    <div id="pdf-report-3" style="display:none; margin-top:20px;">
+        <iframe src="https://drive.google.com/file/d/1Xa44nEIKr-zZW9BZN4jRLqgj7IbwfXmG/view?usp=drive_link" width="100%" height="500px"></iframe>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Data Analytics</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Antenna Design</span>
+                <span class="skill-tag">Renewable Energy Systems</span>
+                <span class="skill-tag">CST Microwave Studio</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:shafiqulislamrifat2@gmail.com" class="contact-btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/md-shafiqul-islam-473826152" class="contact-btn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/rifatislam-25" class="contact-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Embedded Chatbot -->
+    <section id="Rifat.AI">
+        <h2>Chat with Rifat.AI</h2>
+        <iframe 
+            src="https://www.chatbase.co/chatbot-iframe/SAWhxozDQuQpsuXfhcQoR" 
+            width="100%" 
+            style="height: 400px; border: none;">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Md Shafiqul Islam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙</button>
+
+    <!-- AOS & Custom Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Dynamic year update for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // AOS Initialization
+        AOS.init();
+
+        // Toggle PDF Report Visibility
+        function toggleReport() {
+            var report = document.getElementById("pdf-report");
+            report.style.display = report.style.display === "none" ? "block" : "none";
+        }
+    // Dark/Light Mode Toggle
+        document.getElementById("theme-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+           this.textContent = document.body.classList.contains("dark-mode") ? "🌞" : "🌙";
+        });
+    
+    </script>
+</body>
+</html>
